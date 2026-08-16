@@ -1,0 +1,27 @@
+# Simulation artifacts
+*.vvp
+*.vcd
+*.fst
+
+# Synthesis / STA / PnR logs and scratch
+*.log
+*.rpt
+*.json.bak
+
+# OpenROAD / Yosys scratch
+*.db
+*.odb
+run/
+results/
+
+# GDS / layout binaries (large, regenerable -- track selectively if you want the final GDS in-repo)
+*.gds
+*.gds.gz
+
+# Magic scratch
+*.mag~*
+
+# OS / editor cruft
+.DS_Store
+*.swp
+.vscode/
