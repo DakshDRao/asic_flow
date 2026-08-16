@@ -1,0 +1,40 @@
+# Yosys synthesis script for UART.sv -> Sky130 sky130_fd_sc_hd gate-level netlist
+
+# --- Read RTL ---
+# -sv enables SystemVerilog frontend extensions (always_ff, logic, etc.)
+read_verilog -sv ../rtl/UART.sv
+
+# --- Elaborate the design hierarchy, set UART as top module ---
+hierarchy -check -top UART
+
+# --- Generic RTL-level synthesis passes ---
+# proc:    convert always blocks into RTL netlist primitives (mux/ff/etc.)
+# opt:     basic optimization (constant folding, dead code removal)
+# fsm:     detect and optimize finite state machines
+# memory:  handle any memory-like arrays (none in this design, harmless to run)
+# opt:     optimize again after fsm/memory passes
+proc
+opt
+fsm
+memory
+opt
+
+# --- Technology-independent logic synthesis ---
+# techmap: convert remaining high-level cells (adders, muxes, etc.)
+#          into a generic gate-level representation
+techmap
+opt
+
+# --- Technology mapping: map generic gates + flip-flops to real Sky130 cells ---
+dfflibmap -liberty /home/daksh/pdk/sky130A/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty /home/daksh/pdk/sky130A/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# --- Clean up ---
+opt_clean -purge
+
+# --- Reports ---
+stat -liberty /home/daksh/pdk/sky130A/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# --- Write outputs ---
+write_verilog -noattr uart_synth.v
+write_json uart_synth.json

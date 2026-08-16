@@ -9,8 +9,12 @@ output logic tx, read_en
     parameter cycles_per_baud = freq / baudrate;
     logic [12:0] counter;
     logic stop_delay;
-    typedef enum logic [2:0] {IDLE, START, DATA, STOP, LATCH} state_t;
-    state_t state;
+    localparam logic [2:0] IDLE = 3'd0,
+                           START = 3'd1,
+                           DATA = 3'd2,
+                           STOP = 3'd3,
+                           LATCH = 3'd4;
+    logic [2:0] state;
     logic [3:0] current_bit;
     logic [7:0] current_byte;
     always_ff @(posedge clk) begin
@@ -28,10 +32,7 @@ output logic tx, read_en
             end else begin
                 read_en <= 0;
             end
-        end
-    end
-    always_ff @(posedge clk) begin
-        if (state == LATCH) begin
+        end else if (state == LATCH) begin
             read_en <= 0;
             if (stop_delay) begin
                 stop_delay <= 0;
@@ -44,11 +45,7 @@ output logic tx, read_en
                     stop_delay <= 1;
                 end
             end
-        end
-    end    
-
-    always_ff @(posedge clk) begin
-        if(state == START) begin
+        end else if(state == START) begin
             tx <= 0;
                 if(stop_delay) begin
                     stop_delay <= 0;
@@ -60,10 +57,7 @@ output logic tx, read_en
                         stop_delay <= 1;
                     end
                 end
-        end
-    end
-    always_ff @(posedge clk) begin
-        if (state == DATA) begin
+        end else if (state == DATA) begin
             if (current_bit <= 4'b0111) begin
                 tx <= current_byte[current_bit];
                 if(stop_delay) begin
@@ -80,10 +74,7 @@ output logic tx, read_en
                 state <= STOP;
                 current_bit <= 0;
             end
-        end
-    end
-    always_ff @(posedge clk) begin
-        if (state == STOP) begin
+        end else if (state == STOP) begin
             tx <= 1;
             if(stop_delay) begin
                     stop_delay <= 0;
@@ -97,4 +88,5 @@ output logic tx, read_en
                 end
         end
     end
+
 endmodule
