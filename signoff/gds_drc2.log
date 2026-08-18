@@ -1,0 +1,140 @@
+
+Magic 8.3 revision 681 - Compiled on Sun Aug 16 07:58:21 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Loading "gds_drc2.tcl" from command line.
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Reading LEF data from file /home/daksh/pdk/sky130A/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef.
+This action cannot be undone.
+LEF read, Line 82 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 83 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 116 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 118 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 119 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 125 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 126 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 127 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 160 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 168 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 169 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 171 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 172 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 173 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 210 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 211 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 213 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 214 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 215 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 252 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 253 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 255 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 256 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 257 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 294 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 295 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 801 lines.
+Reading DEF data from file ../pnr/uart_routed.def.
+This action cannot be undone.
+  Processed 3 vias total.
+  Processed 1 non-default rules total.
+Cell sky130_fd_sc_hd__clkinv_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Input cell sky130_fd_sc_hd__clkinv_1 scales magic internal geometry by factor of 2
+Cell sky130_fd_sc_hd__nor2_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor3b_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand2_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__mux2_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__mux4_2 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor3_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor4b_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a21oi_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or4_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a31oi_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a221o_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__lpflow_isobufsrc_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__lpflow_inputiso1p_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o21ai_0 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and4_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand4_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a22oi_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a211oi_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__a41oi_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__or3_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand4b_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nor4_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__nand3_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o31ai_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__and2_0 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__mux2i_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__xor2_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__o41ai_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__dfxtp_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__clkbuf_4 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__clkbuf_1 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+Cell sky130_fd_sc_hd__clkbuf_8 read from path /home/daksh/pdk/sky130A/sky130_fd_sc_hd/mag
+  Processed 161 subcell instances total.
+  Processed 13 pins total.
+  Processed 2 special nets total.
+  Processed 169 nets total.
+DEF read: Processed 3103 lines.
+=== instance check ===
+Loading DRC CIF style.
+DRC total after real-geometry load: 21058
+N-Diffusion spacing to N-well < 0.34um (diff/tap.9)
+Can't overlap those layers
+N-well spacing < 1.27um (nwell.2a)
+poly spacing < 0.21um (poly.2)
+poly contact spacing to diffusion < 0.19um (licon.14)
+Diffusion contact to standard cell gate < 0.05um (licon.11)
+N-Diffusion overhang of nFET < 0.25um (poly.7)
+Diffusion contact spacing < 0.17um (licon.2)
+Diffusion spacing < 0.27um (diff/tap.3)
+poly spacing to Diffusion < 0.075um (poly.4)
+Poly1 contact spacing < 0.17um (licon.2)
+poly contact spacing to P-diffusion < 0.235um (licon.9 + psdm.5a)
+poly overlap of poly contact < 0.05um (licon.8)
+poly overlap of poly contact < 0.08um in one direction (licon.8a)
+poly width < 0.15um (poly.1a)
+poly overhang of transistor < 0.13um (poly.8)
+Local interconnect spacing < 0.17um (li.3)
+Core local interconnect spacing < 0.14um (li.c2)
+Local interconnect width < 0.17um (li.1)
+Core local interconnect width < 0.14um (li.c1)
+N-diffusion contact width < 0.17um (licon.1)
+P-diffusion contact width < 0.17um (licon.1)
+poly contact width        < 0.17um (licon.1)
+Local interconnect minimum area < 0.0561um^2 (li.6)
+mcon.spacing < 0.19um (mcon.2)
+Via1 width < 0.26um (via.1a + 2 * via.4a)
+mcon.width < 0.17um (mcon.1)
+Metal1 spacing < 0.14um (met1.2)
+Metal1 overlap of Via1 < 0.03um in one direction (via.5a - via.4a)
+Metal1 overlap of local interconnect contact < 0.03um (met1.4)
+Metal1 overlap of local interconnect contact < 0.06um in one direction (met1.5)
+Metal1 width < 0.14um (met1.1)
+Metal1 minimum area < 0.083um^2 (met1.6)
+via2 width < 0.28um (via2.1a + 2 * via2.4)
+Metal2 overlap of Via1 < 0.03um in one direction (met2.5 - met2.4)
+Metal2 spacing < 0.14um (met2.2)
+Metal2 width < 0.14um (met2.1)
+Metal2 overlap of via2 < 0.045um in one direction (via2.4a - via2.4)
+via2 spacing < 0.12um (via2.2 - 2 * via2.4)
+Metal3 overlap of via2 < 0.025um (met3.4)
+Metal3 minimum area < 0.24um^2 (met3.6)
+via3 width < 0.32um (via3.1 + 2 * via3.4)
+Metal3 width < 0.3um (met3.1)
+Metal3 overlap of via3 in one direction < 0.03um (via3.5 - via3.4)
+Metal3 spacing < 0.3um (met3.2)
+Metal4 width < 0.3um (met4.1)
+Metal4 overlap of via3 < 0.005um (met4.3 - via3.4)
+This layer can't abut or partially overlap between subcells
+Using technology "sky130A", version 1.0.588-56-g026824c
+% 
