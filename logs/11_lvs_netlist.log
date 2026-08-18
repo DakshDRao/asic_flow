@@ -1,0 +1,17 @@
+OpenROAD 26Q3-1297-gcbc7678e45 
+Features included (+) or not (-): +GPU -GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /home/daksh/pdk/sky130A/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/daksh/pdk/sky130A/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/daksh/pdk/sky130A/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[INFO ODB-0127] Reading DEF file: ../pnr/uart_routed_tapfill.def
+[INFO ODB-0128] Design: UART
+[INFO ODB-0130]     Created 13 pins.
+[INFO ODB-0131]     Created 447 components and 2313 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 1728 connections.
+[INFO ODB-0133]     Created 167 nets and 584 connections.
+[INFO ODB-0134] Finished DEF file: ../pnr/uart_routed_tapfill.def
+=== LVS netlist written (physical-only cells removed) ===

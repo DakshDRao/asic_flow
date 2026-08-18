@@ -19,3 +19,5 @@ extract all
 ext2spice lvs
 ext2spice -o uart_extracted.spice
 puts "=== extraction done ==="
+
+quit -noprompt

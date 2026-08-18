@@ -1,0 +1,30 @@
+OpenROAD 26Q3-1297-gcbc7678e45 
+Features included (+) or not (-): +GPU -GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /home/daksh/pdk/sky130A/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/daksh/pdk/sky130A/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/daksh/pdk/sky130A/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[INFO IFP-0107] Defining die area using utilization: 50.00% and aspect ratio: 1.
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 18 rows of 112 site unithd.
+[INFO IFP-0100] Die BBox:  (  0.000  0.000 ) ( 56.225 56.225 ) um
+[INFO IFP-0101] Core BBox: (  2.300  2.720 ) ( 53.820 51.680 ) um
+[INFO IFP-0102] Core area:                         2522.419 um^2
+[INFO IFP-0103] Total instances area:              1363.808 um^2
+[INFO IFP-0104] Effective utilization:                0.541
+[INFO IFP-0105] Number of instances:                    151
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of available slots 192
+[INFO PPL-0002] Number of I/O             13
+[INFO PPL-0003] Number of I/O w/sink      13
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 404.38 um.
+[INFO PDN-0001] Inserting grid: core_grid
+[INFO PDN-0500] Runtime: 0.00s
+Design area 1364 um^2 54% utilization.

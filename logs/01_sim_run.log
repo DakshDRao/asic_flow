@@ -1,0 +1,16 @@
+VCD info: dumpfile tb_UART.vcd opened for output.
+PASS: tx idle-high at start
+[230000] read_en asserted, state-driven byte capture in progress
+PASS: start bit = 0
+PASS: data bit 0 = 1
+PASS: data bit 1 = 0
+PASS: data bit 2 = 1
+PASS: data bit 3 = 0
+PASS: data bit 4 = 1
+PASS: data bit 5 = 1
+PASS: data bit 6 = 0
+PASS: data bit 7 = 1
+PASS: stop bit = 1
+[1042510000] read_en asserted, state-driven byte capture in progress
+=== ALL CHECKS PASSED ===
+tb_UART.sv:130: $finish called at 1042670000 (1ps)
