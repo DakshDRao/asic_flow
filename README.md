@@ -12,6 +12,16 @@ both a working flow and a record of what each backend tool actually does.
 ```
 
 ---
+![UART layout](docs/layout_full.png)
+
+<sub>Full layout — 447 placed instances across 18 standard cell rows, routed on met1–met4.</sub>
+
+| | |
+|:--:|:--:|
+| ![Power grid](docs/layout_pdn.png) | ![Routing](docs/layout_metal.png) |
+| **Power distribution** — met1 followpins rails (cyan) with met4 straps at 20 µm pitch (gold) | **Routing only** — met1–met4 signal wiring with the cells hidden |
+| ![Standard cells](docs/layout_cells.png) | ![Detail](docs/layout_detail.png) |
+| **Device layers** — nwell, diffusion, poly and li1, no metal | **Detail view** — individual transistors, contacts and local interconnect |
 
 ## Result
 
