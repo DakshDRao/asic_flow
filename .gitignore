@@ -25,3 +25,9 @@ results/
 .DS_Store
 *.swp
 .vscode/
+
+# --- signoff evidence IS tracked (overrides the *.log / *.rpt rules above) ---
+!signoff/*.log
+!signoff/*.rpt
+!signoff/*.gds
+!signoff/comp.out

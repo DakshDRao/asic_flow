@@ -29,4 +29,9 @@ report_design_area
 
 write_def uart_cts_tapfill.def
 write_verilog uart_cts_tapfill.v
+add_global_connection -net VPWR -pin_pattern {^VPWR$} -power
+add_global_connection -net VGND -pin_pattern {^VGND$} -ground
+add_global_connection -net VPWR -pin_pattern {^VPB$}  -power
+add_global_connection -net VGND -pin_pattern {^VNB$}  -ground
+global_connect
 puts "=== CTS (tapfill) done ==="
