@@ -24,6 +24,7 @@ output logic tx, read_en
             stop_delay <= 0;
             tx <= 1;
             current_bit <= 0;
+            read_en <= 0;
         end else if (state == IDLE) begin
             if (!empty) begin
                 tx <= 1;
