@@ -42,3 +42,8 @@ report_design_area
 # --- Write outputs ---
 write_def uart_cts.def
 write_verilog uart_cts.v
+add_global_connection -net VPWR -pin_pattern {^VPWR$} -power
+add_global_connection -net VGND -pin_pattern {^VGND$} -ground
+add_global_connection -net VPWR -pin_pattern {^VPB$}  -power
+add_global_connection -net VGND -pin_pattern {^VNB$}  -ground
+global_connect
